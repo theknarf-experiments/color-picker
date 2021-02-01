@@ -1,0 +1,30 @@
+.app {
+	max-width: 800px;
+	background: #eee;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	padding: 50px;
+}
+
+.app input {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+}
+
+.color {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	position: relative;
+	top: 10px;
+	margin-left: 10px;
+}
+
+.colorPicker {
+	position: absolute;
+	bottom: 30px;
+	left: -300%;
+}
