@@ -58,10 +58,10 @@ const App : React.FC = () => {
 	const code = useMemo(() => {
 		const variablesAsCss = Object
 			.keys(cssVars)
-			.map((key) => `--${key}: ${cssVars[key]};`)
+			.map((key) => `  --${key}: ${cssVars[key]};`)
 			.join("\n");
 
-		return `body {\n${variablesAsCss}\n}`;
+		return `:root {\n${variablesAsCss}\n}`;
 	}, [ cssVars ]);
 
 	const onAdd = (name : string) =>
